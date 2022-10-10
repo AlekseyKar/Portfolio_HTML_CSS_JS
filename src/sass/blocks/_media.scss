@@ -1,0 +1,119 @@
+@media (max-width: 89.938rem) {
+  .sidepanel {
+      display: none;
+  }
+}
+@media (max-width: 75rem) {
+  .container {
+      max-width: 60rem;
+  }
+  .about {
+      &__wrapper {
+          grid-template-columns: 25rem 32.5rem;
+          column-gap: 2.5rem;
+      }
+      &__skills {
+          column-gap: 1.25rem;
+          grid-template: repeat(2,minmax(7.188rem,auto))/repeat(2,15.625rem);
+          &-item {
+              grid-template-columns: 2.5rem 12.188rem;
+              column-gap: .938rem;
+          }
+      }
+  }
+}
+
+@media (max-width: 62rem) {
+  .container {
+      max-width: 45rem;
+  }
+  .title {
+      &_fz36 {
+          font-size: 1.875rem;
+      }
+  }
+  .about {
+      &__wrapper {
+          grid-template-columns: 18.75rem 23.75rem;
+      }
+      &__skills {
+          grid-template-columns: 23.75rem;
+          grid-auto-rows: minmax(7.188rem,auto);
+          &-item {
+              grid-template-columns: 2.5rem 20rem;
+              column-gap: 1.25rem;
+          }
+      }
+  }
+}
+
+@media (max-width: 48rem) {
+  .container {
+      max-width: 33.75rem;
+  }
+  .title {
+      &_fz48 {
+          font-size: 1.75rem;
+      }
+  }
+  .promo {
+      &__title {
+          line-height: 2.438rem;
+          width: 18.75rem;
+      }
+  }
+  .about {
+      padding-top: 2.5rem;
+      &__wrapper {
+          grid-template: 25rem auto auto / 1fr;
+      }
+      &__photo {
+          grid-row: unset;
+      }
+      &__skills {
+          grid-template-columns: repeat(2, 16.25rem);
+          &-item {
+              grid-template-columns: 2.5rem 12.5rem;
+              column-gap: 1.25rem;
+          }
+      }
+  }
+}
+
+@media (max-width: 36rem) {
+  .container {
+      width: 100%;
+      padding: 0 .625rem;
+  }
+  .title {
+      &_fz48 {
+          font-size: 1.625rem;
+      }
+      &_fz36 {
+          font-size: 1.5rem;
+      }
+  }
+  .hamburger {
+      right: 1.25rem;
+  }
+  .menu {
+      &__block {
+          width: 15.625rem;
+          padding-left: 1.25rem;
+      }
+  }
+  .promo {
+      background: url('../img/main_bg.jpg') no-repeat 57%/cover;
+      &__btns {
+          margin-top: 1.875rem;
+      }
+  }
+  .about {
+      &__wrapper {
+          grid-template: 21.25rem auto auto / 1fr;
+      }
+      &__skills {
+          grid-template-columns: 1fr;
+      }
+  }
+}

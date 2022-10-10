@@ -1,0 +1,66 @@
+.skills {
+  padding-top: 7.5rem;
+  &__items {
+      margin-top: 3.75rem;
+      padding: 0 .625rem;
+      display: grid;
+      grid-template: repeat(2, minmax(16.875rem, auto)) / repeat(4, 16.875rem);
+      grid-auto-rows: minmax(16.875rem, auto);
+      gap: .813rem;
+  }
+  &__item {
+      border: .063rem solid black;
+      padding: 1.875rem 1.875rem 1.563rem 1.875rem;
+      &-img {
+          display: flex;
+          align-items: center;
+          min-height: 4.063rem;
+      }
+      h3 {
+          margin-top: 1.25rem;
+          margin-bottom: 0;
+      }
+      p {
+          margin-top: .938rem;
+          margin-bottom: 0;
+          font-size: .75rem;
+          line-height: 1.125rem;
+      }
+  }
+  &__ratings {
+      margin-top: 7.5rem;
+      display: grid;
+      grid-template: repeat(2, minmax(4.375rem, auto)) / repeat(3, 21.875rem);
+      column-gap: 2.813rem;
+      row-gap: 2.188rem;
+      &-item {
+          display: grid;
+          grid-template: minmax(1.313rem, auto) .875rem / 12.5rem 2.188rem;
+          justify-content: space-between;
+          align-content: space-between;
+      }
+      &-title {
+          position: relative;
+          padding: .125rem 0 0 .813rem;
+
+          @include before_circle;
+      }
+      &-counter {
+          font-size: .875rem;
+          line-height: 1.313rem;
+      }
+      &-line {
+          width: 21.875rem;
+          height: .875rem;
+          background-color: #E8E4DE;
+          border-radius: .25rem;
+          grid-column: 1 / 3;
+          span {
+              display: block;
+              height: 100%;
+              background-color: $main-color;
+              border-radius: .25rem;
+          }
+      }
+  }
+}
